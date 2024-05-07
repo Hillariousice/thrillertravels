@@ -1,0 +1,24 @@
+{
+  "name": "thillertravels",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dep:up": "docker compose -f .docker-compose.yml up",
+    "dep:down": "docker compose -f .docker-compose.yml down",
+    "dep:build": "docker-compose -f .docker-compose.yml build",
+    "dep:restart": "npm run dep:down && npm run dep:up",
+    "logs": "docker-compose -f .docker-compose.yml logs -f",
+    "dep:status": "docker-compose -f .docker-compose.yml ps",
+    "dep:exec": "docker-compose -f .docker-compose.yml exec",
+    "shell:user-service": "docker-compose -f .docker-compose.yml exec user-service /bin/bash",
+    "shell:hotel-service": "docker-compose -f .docker-compose.yml exec hotel-service /bin/bash",
+    "shell:booking-service": "docker-compose -f .docker-compose.yml exec booking-service /bin/bash",
+    "scale:booking-service": "docker-compose -f .docker-compose.yml up --scale booking-service=3 -d"
+
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

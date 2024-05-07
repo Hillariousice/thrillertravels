@@ -1,0 +1,10 @@
+export enum KeyType {
+  ALPHANUMERIC = 'ALPHANUMERIC',
+  NUMERIC = 'NUMERIC',
+  UPPER_ALPHANUMERIC = 'UPPER_ALPHANUMERIC',
+}
+
+export enum Role {
+  USER = 'USER',
+  ADMIN = 'ADMIN',
+}
