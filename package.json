@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "build:shared": "tsc --build shared",
+    "build:hotels": "tsc --build hotels",
+    "build:bookings": "tsc --build bookings",
+    "build:user": "tsc --build user",
+    "build:all": "npm run build:shared && npm run build:hotels && npm run build:user && npm run build:bookings",
     "test": "echo \"Error: no test specified\" && exit 1",
     "dep:up": "docker compose -f .docker-compose.yml up",
     "dep:down": "docker compose -f .docker-compose.yml down",

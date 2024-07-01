@@ -1,0 +1,18 @@
+import { ConflictException, ForbiddenException, NotFoundException, UnauthorizedException } from '@nestjs/common';
+export declare const EmailAlreadyUsedException: () => ConflictException;
+export declare const PhoneAlreadyUsedException: () => ConflictException;
+export declare const VerifiedEmailAlreadyExistsException: () => ConflictException;
+export declare const VerifiedPhoneAlreadyExistsException: () => ConflictException;
+export declare const RecoveryTokenExistsException: () => ConflictException;
+export declare const AccountRecoveryTokenInvalidException: () => ForbiddenException;
+export declare const TokenNotFoundException: () => NotFoundException;
+export declare const TokenInvalidException: () => ForbiddenException;
+export declare const UserNotFoundException: () => NotFoundException;
+export declare const TargetNotVerifiedException: () => ForbiddenException;
+export declare const TargetVerifiedException: () => ForbiddenException;
+export declare const IncorrectLoginCredentialsException: () => UnauthorizedException;
+export declare const IncorrectPasswordException: () => UnauthorizedException;
+export declare const HotelNotFoundException: () => NotFoundException;
+export declare const InsufficientPriviledgeException: () => ForbiddenException;
+export declare const BookingNotFoundException: () => NotFoundException;
+export declare const BookingsNotFoundException: () => NotFoundException;
