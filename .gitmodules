@@ -1,0 +1,11 @@
+[submodule "bookings"]
+    path = bookings
+    url = https://github.com/Hillariousice/thrillertravels/bookings.git
+
+[submodule "hotels"]
+    path = hotels
+    url = https://github.com/Hillariousice/thrillertravels/hotels.git
+
+[submodule "user"]
+    path = user
+    url = https://github.com/Hillariousice/thrillertravels/user.git
